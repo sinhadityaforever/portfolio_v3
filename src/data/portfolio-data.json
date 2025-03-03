@@ -1,0 +1,160 @@
+{
+	"personal": {
+		"name": "Aditya Sinha",
+		"title": "Full Stack and Cloud Developer",
+		"tagline": "A Person Who Iterates Fast",
+		"photo": "/lovable-uploads/c677c60d-f84c-4bf7-9078-58a0124d0531.png",
+		"description": "Skilled in building scalable applications, managing cloud infrastructure, and ensuring system reliability.",
+		"location": "Bengaluru, India",
+		"email": "sinhadityaforever@gmail.com",
+		"phone": "+1 234 567 890",
+		"resumeUrl": "https://drive.google.com/file/d/1z5HgY0vMsMLTyCMJdm28I_VEIMsbssA3/view?usp=sharing",
+		"socialLinks": {
+			"github": "https://github.com/sinhadityaforever",
+			"linkedin": "https://linkedin.com/in/Sinhaditya14",
+			"twitter": "https://twitter.com/mayybe_aadi",
+			"dribbble": "https://dribbble.com/yourusername"
+		}
+	},
+	"about": {
+		"bio": [
+			"I'm a software engineer and designer with a passion for creating elegant, efficient, and user-centered digital experiences. With expertise spanning front-end and back-end development, I combine technical knowledge with creative problem-solving to build applications that are both beautiful and functional.",
+			"Throughout my career, I've worked with a diverse range of technologies and frameworks, always focusing on writing clean, maintainable code that solves real-world problems. I believe in continuous learning and staying at the forefront of technological advancements."
+		],
+		"education": [
+			{
+				"degree": "Computer Science",
+				"school": "University of Technology",
+				"year": "2015 - 2019"
+			}
+		],
+		"experience": [
+			{
+				"position": "Senior Developer",
+				"company": "Tech Innovations Inc.",
+				"year": "2019 - Present"
+			}
+		]
+	},
+	"journey": {
+		"title": "My Journey",
+		"subtitle": "A look at the professional milestones and growth",
+		"milestones": [
+			
+			
+			{
+				"title": "Azure Cloud Developer",
+				"company": "Fastenal India",
+				"period": "Aug 2024 - Present",
+				"description": "Improved cloud operations with Azure, focusing on automation and compliance"
+			},
+      {
+				"title": "IT Trainee",
+				"company": "Fastenal India",
+				"period": "Jan 2024-July 2024",
+				"description": "Developed a Full Stack Training Planner Web Application designed to streamline intern training processes, ensuring efficient management of training schedules and resources."
+			},
+      {
+				"title": "MEAN stack developer",
+				"company": "Edufied",
+				"period": "Jan 2022-March 2022",
+				"description": "Developed the full stack Filpass webpage, automated certificate processes, and improved client communication with an email backend service"
+			}
+		]
+	},
+	"projects": [
+		{
+			"id": 1,
+			"title": "AI Email Reply Generator",
+			"description": "An AI-powered tool that generates email replies based on the context and sentiment of incoming messages.",
+			"tags": ["React", "SpringBoot", "Node.js"],
+			"image": "/lovable-uploads/email-gen.png",
+			"link": "https://email-reply-generator.vercel.app/",
+			"github": "https://github.com/sinhadityaforever/spring-email-writer",
+			"liveDisabled": false,
+			"codeDisabled": false
+		},
+		{
+			"id": 2,
+			"title": "ArtiScan",
+			"description": "AI based tool to summarize articles",
+			"tags": ["React.js", "RapidAPI"],
+			"image": "/lovable-uploads/artiscan.png",
+			"link": "https://artiscan.vercel.app/",
+			"github": "https://github.com/sinhadityaforever/artiscan",
+			"liveDisabled": false,
+			"codeDisabled": false
+		},
+		{
+			"id": 3,
+			"title": "TrackiFi",
+			"description": "A finance management and analysis tool with budgeting feature",
+			"tags": ["React.js", "Express.js", "MongoDB"],
+			"image": "/lovable-uploads/trackifi.png",
+			"link": "#",
+			"github": "https://github.com/yourusername/healthcare-portal",
+			"liveDisabled": false,
+			"codeDisabled": false
+		}
+	],
+	"skills": [
+		{
+			"title": "Frontend",
+			"skills": [
+				{ "name": "React", "level": 90 },
+				{ "name": "Angular", "level": 75 },
+				{ "name": "JavaScript", "level": 95 },
+				{ "name": "TypeScript", "level": 85 },
+				{ "name": "HTML/CSS", "level": 90 },
+				{ "name": "Tailwind CSS", "level": 95 },
+				{ "name": "SASS/SCSS", "level": 80 }
+			]
+		},
+		{
+			"title": "Backend",
+			"skills": [
+				{ "name": "Node.js", "level": 90 },
+				{ "name": "Express", "level": 85 },
+				{ "name": "SpringBoot", "level": 65 },
+				{ "name": "JavaScript", "level": 60 },
+				{ "name": "TypeScript", "level": 80 }
+			]
+		},
+		{
+			"title": "Database",
+			"skills": [
+				{ "name": "MongoDB", "level": 85 },
+				{ "name": "PostgreSQL", "level": 80 },
+				{ "name": "MySQL", "level": 85 }
+			]
+		},
+		{
+			"title": "Tools & Platforms",
+			"skills": [
+				{ "name": "Git", "level": 95 },
+				{ "name": "Docker", "level": 80 },
+				{ "name": "Azure", "level": 70 },
+				{ "name": "Terraform", "level": 85 },
+				{ "name": "Shell Scripting", "level": 90 }
+			]
+		}
+	],
+	"stats": [
+		{
+			"value": "5+",
+			"label": "Years Experience"
+		},
+		{
+			"value": "50+",
+			"label": "Projects Completed"
+		},
+		{
+			"value": "20+",
+			"label": "Happy Clients"
+		},
+		{
+			"value": "10+",
+			"label": "Technologies Mastered"
+		}
+	]
+}

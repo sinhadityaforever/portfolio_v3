@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 174 75% 37%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.1% 14.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 245 21% 8%; /* Darker deep purple background */
+    --foreground: 0 0% 98%;
+
+    --card: 245 21% 12%; /* Darker card background */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 245 21% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 75% 60%; /* Vibrant purple from screenshot */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 245 21% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 245 21% 20%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 170 80% 40%; /* Teal accent color */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 245 21% 20%;
+    --input: 245 21% 20%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-sm bg-white/30 border border-white/20 shadow-md;
+  }
+  
+  .glass-dark {
+    @apply backdrop-blur-sm bg-black/30 border border-white/10 shadow-md;
+  }
+  
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+  
+  .link-hover {
+    @apply relative after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 
+    after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 
+    hover:after:scale-x-100 hover:after:origin-bottom-left transition-colors duration-300;
+  }
+
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:p-[1px] before:rounded-lg before:bg-gradient-to-r before:from-primary/50 before:to-accent/50 before:-z-10 before:opacity-70;
+  }
+
+  .purple-dot {
+    @apply relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-2 before:h-2 before:bg-primary before:rounded-full;
+  }
+  
+  /* Button variants */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary/80 text-white backdrop-blur-md rounded-lg 
+           border border-primary/40 shadow-[0_8px_16px_-4px_rgba(var(--primary),0.5)] 
+           hover:shadow-[0_12px_20px_-4px_rgba(var(--primary),0.6)] 
+           hover:bg-primary transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-accent/80 text-white backdrop-blur-md rounded-lg 
+           border border-accent/40 shadow-[0_8px_16px_-4px_rgba(var(--accent),0.5)] 
+           hover:shadow-[0_12px_20px_-4px_rgba(var(--accent),0.6)] 
+           hover:bg-accent transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 bg-transparent backdrop-blur-sm text-foreground rounded-lg 
+           border-2 border-border hover:border-primary/50 shadow-sm 
+           hover:shadow-[0_6px_14px_-6px_rgba(var(--primary),0.4)] 
+           transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-gradient {
+    @apply px-6 py-3 bg-gradient-to-r from-primary/90 to-accent/90 text-white rounded-lg 
+           border border-white/10 shadow-[0_8px_16px_-4px_rgba(var(--primary),0.5)] 
+           hover:shadow-[0_12px_20px_-4px_rgba(var(--primary),0.7)] 
+           hover:from-primary hover:to-accent
+           transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-glass {
+    @apply px-6 py-3 bg-white/10 backdrop-blur-md text-foreground rounded-lg 
+           border border-white/20 dark:border-white/10 shadow-[0_8px_16px_-4px_rgba(0,0,0,0.1)] 
+           dark:shadow-[0_8px_16px_-4px_rgba(0,0,0,0.3)]
+           hover:bg-white/20 dark:hover:bg-white/15
+           transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .btn-soft {
+    @apply px-6 py-3 bg-secondary/70 text-foreground backdrop-blur-sm rounded-full 
+           border border-border/30 shadow-[0_6px_14px_-6px_rgba(0,0,0,0.1)] 
+           dark:shadow-[0_6px_14px_-6px_rgba(0,0,0,0.2)]
+           hover:bg-secondary transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .btn-icon {
+    @apply flex items-center justify-center gap-2;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* For smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* For 3D effect */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1000px;
+}
