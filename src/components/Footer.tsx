@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="mt-6 flex space-x-4">
               <motion.a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/sinhadityaforever" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:from-primary/80 hover:to-accent/80 hover:text-white transition-all duration-300 shadow-lg"
@@ -31,7 +31,7 @@ const Footer = () => {
                 </svg>
               </motion.a>
               <motion.a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://linkedin.com/in/Sinhaditya14" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0077b5]/30 to-[#00a0dc]/30 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:from-[#0077b5]/80 hover:to-[#00a0dc]/80 hover:text-white transition-all duration-300 shadow-lg"
@@ -45,7 +45,7 @@ const Footer = () => {
                 </svg>
               </motion.a>
               <motion.a 
-                href="https://twitter.com/yourusername" 
+                href="https://twitter.com/mayybe_aadi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1DA1F2]/30 to-[#1DA1F2]/10 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:from-[#1DA1F2]/80 hover:to-[#1DA1F2]/60 hover:text-white transition-all duration-300 shadow-lg"
@@ -80,9 +80,9 @@ const Footer = () => {
               <li>
                 <a href="#home" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</a>
               </li>
